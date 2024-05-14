@@ -1,23 +1,28 @@
+import React, { useState } from 'react';
+const [username, setUsername] = useState('');
+const [password, setPassword] = useState('');
 import { Image, StyleSheet, Platform } from 'react-native';
 
-import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
+  const handleLogin = () => { console.log('Login attempt with:', username, password); };
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/login-focused-image.png')}
           style={styles.reactLogo}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
+      }> {/* Login focused content */}
+      <ThemedView style={styles.inputContainer}>
+        <ThemedView style={styles.titleContainer}>
+          <ThemedText type="title">Login</ThemedText> // Was previously Welcome!
+        </ThemedView>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
@@ -55,6 +60,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+  },
+  inputContainer: {
+    padding: 20,
+    backgroundColor: '#f0f0f0',
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
   },
   stepContainer: {
     gap: 8,
