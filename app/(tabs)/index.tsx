@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LoginView from '@/screens/authentication/LoginView';
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
 import { Image, StyleSheet, Platform } from 'react-native';
@@ -15,42 +16,11 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/login-focused-image.png')}
+          source={require('@/assets/images/new-login-image.png')}
           style={styles.reactLogo}
         />
       }> {/* Login focused content */}
-      <ThemedView style={styles.inputContainer}>
-        <ThemedView style={styles.titleContainer}>
-          <ThemedText type="title">Login</ThemedText> // Was previously Welcome!
-        </ThemedView>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
+      <LoginView />
     </ParallaxScrollView>
   );
 }
@@ -64,6 +34,8 @@ const styles = StyleSheet.create({
   inputContainer: {
     padding: 20,
     backgroundColor: '#f0f0f0',
+    alignItems: 'center',  // Added to improve alignment
+    justifyContent: 'center',  // Added to improve alignment
   },
   input: {
     height: 40,
@@ -76,8 +48,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 178,
-    width: 290,
+    height: 200,  // Adjusted for new aspect ratio
+    width: 320,   // Adjusted for new aspect ratio
     bottom: 0,
     left: 0,
     position: 'absolute',
