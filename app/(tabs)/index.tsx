@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginView from '@/screens/authentication/LoginView';
+// State management for username and password. Consider using global context for shared state across components.
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
 import { Image } from 'react-native';
@@ -9,6 +10,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
+  // Function to handle login attempts. Future enhancements might include integrating with global context for authentication status.
   const handleLogin = () => { console.log('Login attempt with:', username, password); };
 
   return (
@@ -20,7 +22,7 @@ export default function HomeScreen() {
           style={{ height: 178, width: 290, position: 'absolute', bottom: 0, left: 0 }}
         />
       }>
-      <LoginView /> {/* Login functionality encapsulated */}
+      <LoginView /> {/* Login functionality encapsulated. Review or refactor this component for potential performance optimizations. */}
     </ParallaxScrollView>
   );
 }
