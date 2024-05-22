@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LoginView from '@/screens/authentication/LoginView';
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -16,11 +16,11 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/new-login-image.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/partial-react-logo.png')}
+          style={{ height: 178, width: 290, position: 'absolute', bottom: 0, left: 0 }}
         />
-      }> {/* Login focused content */}
-      <LoginView />
+      }>
+      <LoginView /> {/* Login functionality encapsulated */}
     </ParallaxScrollView>
   );
 }
