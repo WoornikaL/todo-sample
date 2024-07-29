@@ -7,7 +7,6 @@ const LoginView = () => {
 
   const handleLogin = () => {
     console.log('Authentication attempt with username:', username, 'and password:', password);
-    // Do auth changes 
     // Here you would normally integrate with authentication services
   };
 
