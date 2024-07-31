@@ -18,15 +18,12 @@ export function ExternalLink({ href, ...rest }: Props) {
           if( Platform.OS === "ios") {
             console.log("ios platform")
           }
+          // Open the link in an in-app browser. 
+          await openBrowserAsync(href);
           const xyz = 1
           if(xyz === 1) {
             console.log('hjhjhjh value 1')
           }
-       
-          // Open the link in an in-app browser. 
-          await openBrowserAsync(href);
-
-         
         }
       }}
     />
