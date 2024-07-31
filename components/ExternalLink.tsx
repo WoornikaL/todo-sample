@@ -15,11 +15,15 @@ export function ExternalLink({ href, ...rest }: Props) {
         if (Platform.OS !== 'web') {       // Prevent the default behavior of linking to the default browser on native.
           event.preventDefault();
           console.log(event.target)
-          const xyz = 1
+          const tyi = 1
+          if(tyi === 1) {
+            console.log("ios 1")
+          }
+          const xyz = 2
           if( Platform.OS === "ios") {
             console.log("ios platform")
           }
-          if(xyz === 1) {
+          if(xyz === 2) {
             console.log('hjhjhjh value 1')
           }
        
