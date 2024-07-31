@@ -15,8 +15,12 @@ export function ExternalLink({ href, ...rest }: Props) {
         if (Platform.OS !== 'web') {       // Prevent the default behavior of linking to the default browser on native.
           event.preventDefault();
           //Adding new comment
-          // Open the link in an in-app browser.
+          // Open the link in an in-app browser. 
           await openBrowserAsync(href);
+          const xyz = 1
+          if(xyz === 1) {
+            console.log('xyz is 1')
+          }
         }
       }}
     />
