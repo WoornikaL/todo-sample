@@ -19,7 +19,7 @@ export function ExternalLink({ href, ...rest }: Props) {
           await openBrowserAsync(href);
           const xyz = 1
           if(xyz === 1) {
-            console.log('xyz is 1')
+            console.log('xyz value is 1')
           }
         }
       }}
