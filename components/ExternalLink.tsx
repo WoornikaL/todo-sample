@@ -20,15 +20,20 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(tyi === 11) {
             console.log("ios 1")
           }
+          if(tyi === 11) {
+            console.log("ios 1")
+          }
+          //Adding conflict
+          if(5 === 5) {
+            console.log(' value 2')
+          }
           // show conflict
           const xyz = 5
           if( Platform.OS === "ios") {
             console.info("ios platform")
 
           }
-          if(tyi === 11) {
-            console.log("ios 1")
-          }
+      // Changing this line
           //changed this line
           if(xyz === 5) {
             console.log('hjhjhjh value 1')
