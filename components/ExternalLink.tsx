@@ -20,17 +20,12 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(tyi === 11) {
             console.log("ios 1")
           }
-<<<<<<< HEAD
-          // show conflict
-          const xyz = 5
-=======
           // Added Code
           if( Platform.OS === "abd") {
             console.log("android platform")
           }
           const xyz = 2
           //Removed Code
->>>>>>> a996525 (commit4)
           if( Platform.OS === "ios") {
             console.info("ios platform")
 
