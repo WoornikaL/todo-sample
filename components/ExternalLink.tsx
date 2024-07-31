@@ -16,7 +16,7 @@ export function ExternalLink({ href, ...rest }: Props) {
           event.preventDefault();
           //Adding new comment
           if( Platform.OS === "ios") {
-            console.log("ios")
+            console.log("ios platform")
           }
           // Open the link in an in-app browser. 
           await openBrowserAsync(href);
