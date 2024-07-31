@@ -21,15 +21,14 @@ export function ExternalLink({ href, ...rest }: Props) {
             console.log("ios 1")
           }
           // Added Code
-          if( Platform.OS === "abd") {
-            console.log("android platform")
-          }
-          const xyz = 2
-          //Removed Code
           if( Platform.OS === "ios") {
             console.info("ios platform")
 
           }
+          //Changing this line
+          const xyz = 2
+          //Removed Code
+ 
           if(tyi === 11) {
             console.log("ios 1")
           }
