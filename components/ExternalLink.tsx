@@ -12,6 +12,7 @@ export function ExternalLink({ href, ...rest }: Props) {
       {...rest}
       href={href}
       onPress={async (event) => {
+        const xyz = 1
         if (Platform.OS !== 'web') {       // Prevent the default behavior of linking to the default browser on native.
           event.preventDefault();
           console.log(event.target)
@@ -26,10 +27,16 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(xyz === 2) {
             console.log('hjhjhjh value 1')
           }
+          if(xyz === 2) {
+            console.log('hjhjhjh value 2')
+          }
+          if( Platform.OS === "android") {
+            console.log("android platform")
+          }
+       
        
           // Open the link in an in-app browser. 
           await openBrowserAsync(href);
-         
          
         }
       }}
