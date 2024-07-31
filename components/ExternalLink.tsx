@@ -16,21 +16,28 @@ export function ExternalLink({ href, ...rest }: Props) {
         if (Platform.OS !== 'web') {       // Prevent the default behavior of linking to the default browser on native.
           event.preventDefault();
           console.log(event.target)
-          const tyi = 1
-          if(tyi === 1) {
+          const tyi = 11
+          if(tyi === 11) {
             console.log("ios 1")
           }
-          const xyz = 2
+          // show conflict
+          const xyz = 5
           if( Platform.OS === "ios") {
-            console.log("ios platform")
+            console.info("ios platform")
+
           }
-          if(xyz === 2) {
+          if(tyi === 11) {
+            console.log("ios 1")
+          }
+          //changed this line
+          if(xyz === 5) {
             console.log('hjhjhjh value 1')
           }
-          if(xyz === 2) {
+          if(xyz === 5) {
             console.log('hjhjhjh value 2')
           }
           if( Platform.OS === "android") {
+            // Display error
             console.log("android platform")
           }
        
