@@ -20,31 +20,30 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(tyi === 11) {
             console.log("ios 1")
           }
-          if(tyi === 11) {
-            console.log("ios 1")
-          }
-          //Adding conflict
-          if(5 === 5) {
-            console.log(' value 2')
-          }
-          // show conflict
-          const xyz = 5
+          // Added Code
           if( Platform.OS === "ios") {
             console.info("ios platform")
 
           }
-      // Changing this line
+          //Changing this line
+          const xyz = 2
+          //Removed Code
+ 
+          if(tyi === 11) {
+            console.log("ios 1")
+          }
           //changed this line
-          if(xyz === 5) {
+          if(xyz === 2) {
             console.log('hjhjhjh value 1')
           }
-          if(xyz === 5) {
+          if(xyz === 2) {
             console.log('hjhjhjh value 2')
           }
           if( Platform.OS === "android") {
             // Display error
             console.log("android platform")
           }
+         
        
        
           // Open the link in an in-app browser. 
