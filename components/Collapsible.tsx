@@ -10,7 +10,7 @@ export function Collapsible({ children, title }: PropsWithChildren & { title: st
   const [isOpen, setIsOpen] = useState(false);
   const theme = useColorScheme() ?? 'light';
 
-  // render method 
+  // render method comment
   return (
     <ThemedView>
       <TouchableOpacity
