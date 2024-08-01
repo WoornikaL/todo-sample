@@ -40,10 +40,14 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(xyz === 2) {
             console.log('hjhjhjh value 2')
           }
+<<<<<<< HEAD
           if( Platform.OS === "android") {
             // Display error
             console.log("android platform")
           }
+=======
+         
+>>>>>>> a996525 (commit4)
        
        
           // Open the link in an in-app browser. 
