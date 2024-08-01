@@ -11,12 +11,13 @@ import { ThemedText } from '@/components/ThemedText';
 
 export function NewComponent() {
   const rotationAnimation = useSharedValue(0);
+  // New comment
 
   rotationAnimation.value = withRepeat(
     withSequence(withTiming(25, { duration: 150 }), withTiming(0, { duration: 150 })),
     4 // Run the animation 4 timeshghg
   );
-
+//
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ rotate: `${rotationAnimation.value}deg` }],
   }));
