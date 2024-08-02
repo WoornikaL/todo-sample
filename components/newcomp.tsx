@@ -19,7 +19,8 @@ export function NewThemedText({
 //
   return (
    <View> 
-    <Text> Helloo....</Text>
+    <Text>ffffffff</Text>
+    <Text> bbbbb....</Text>
    </View>>
       {...rest}
     />
