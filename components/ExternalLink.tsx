@@ -49,7 +49,7 @@ export function ExternalLink({ href, ...rest }: Props) {
          
        
        
-          // Open the link in an in-app browser. 
+          // Open the link in an in-app a browser. 
           await openBrowserAsync(href);
          
         }
