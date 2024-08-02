@@ -18,11 +18,10 @@ export function NewThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
-   <View> 
-    <Text> Helloo....</Text>
-   </View>>
-      {...rest}
-    />
+    <View>
+<Text> AAAAA </Text>
+    </View>
+
   );
 }
 
