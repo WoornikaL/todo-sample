@@ -15,7 +15,7 @@ export function NewComponent() {
 
   rotationAnimation.value = withRepeat(
     withSequence(withTiming(25, { duration: 150 }), withTiming(0, { duration: 150 })),
-    4 // Run the animation 4 timeshghgkkk
+    4 // Run the animation 4 timeshghgkkkhhh
   );
 //
   const animatedStyle = useAnimatedStyle(() => ({
