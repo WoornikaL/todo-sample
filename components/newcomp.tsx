@@ -10,7 +10,7 @@ export type ThemedTextProps = TextProps & {
 
 export function NewThemedText({
   style,
-  lightColor,
+  graycolor,
   darkColor,
   type = 'default',
   ...rest
@@ -18,16 +18,9 @@ export function NewThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
-    <Text
-      style={[
-        { color },
-        type === 'default' ? styles.subtitle : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.default : undefined,
-        type === 'link' ? styles.link : undefined,
-        style,
-      ]}
+   <View> 
+    <Text> Helloo....</Text>
+   </View>>
       {...rest}
     />
   );
