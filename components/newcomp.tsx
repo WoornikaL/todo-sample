@@ -19,8 +19,10 @@ export function NewThemedText({
 //
   return (
     <View>
-<Text> AAAAA </Text>
-<Text> bbbbbbbblkjhuhuh </Text>
+<Text> jhjjjjj </Text>
+<View>
+  <Text> bbbbbuoomgff</Text>
+  </View>>
     </View>
 
   );
