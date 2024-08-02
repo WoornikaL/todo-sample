@@ -29,7 +29,7 @@ export function Collapsible({ children, title }: PropsWithChildren & { title: st
   );
 }
 
-//styles added more 1
+//styles added more 2
 const styles = StyleSheet.create({
   heading: {
     flexDirection: 'row',
