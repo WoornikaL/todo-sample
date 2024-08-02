@@ -21,10 +21,10 @@ export function NewThemedText({
     <Text
       style={[
         { color },
-        type === 'default' ? styles.default : undefined,
+        type === 'default' ? styles.subtitle : undefined,
         type === 'title' ? styles.title : undefined,
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
+        type === 'subtitle' ? styles.default : undefined,
         type === 'link' ? styles.link : undefined,
         style,
       ]}
