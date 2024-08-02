@@ -20,8 +20,10 @@ export function NewThemedText({
   return (
     <View>
 <Text> jhjjjjj </Text>
+<Text> aaaaaa</Text>
 <View>
-  <Text> bbbbbuoomgff</Text>
+
+  <Text> bbbbbuoomgfhhhhf</Text>
   </View>>
     </View>
 
