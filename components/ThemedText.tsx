@@ -18,22 +18,14 @@ export function ThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Add more custom styles as needed, e.g., different font sizes for different types ajkkhjhjh
-
-=======
     // Add more custom styles as needed, e.g., different font sizes for different types
->>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
-=======
-    // Add more custom styles as needed, e.g., different font sizes for different types
->>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
     <Text
       style={[
         { color },
         type === 'default' ? styles.default : undefined,
         type === 'title' ? styles.link : undefined,
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
+        type === 'subtitle' ? styles.title : undefined,
         type === 'subtitle' ? styles.title : undefined,
         style,
       ]}
