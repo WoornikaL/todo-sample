@@ -18,12 +18,20 @@ export function NewThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
+<<<<<<< HEAD
     <View>
 <Text> jhjjjjj </Text>
 <Text> aaaaaa</Text>
 </View>
 
 
+=======
+   <View> 
+    <Text>cxxxxxx</Text>
+   </View>>
+      {...rest}
+    />
+>>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
   );
 }
 
