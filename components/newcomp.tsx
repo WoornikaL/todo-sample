@@ -19,6 +19,7 @@ export function NewThemedText({
 //
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <View>
 <Text> jhjjjjj </Text>
 <Text> aaaaaa</Text>
@@ -29,11 +30,16 @@ export function NewThemedText({
     </View>
 
 =======
+=======
+>>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
    <View> 
     <Text>cxxxxxx</Text>
    </View>>
       {...rest}
     />
+<<<<<<< HEAD
+>>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
+=======
 >>>>>>> 61f376787728a9a9ff2b39a0f1a53c15bcb53324
   );
 }
