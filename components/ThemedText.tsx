@@ -26,7 +26,6 @@ export function ThemedText({
         type === 'title' ? styles.link : undefined,
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
         type === 'subtitle' ? styles.title : undefined,
-        type === 'subtitle' ? styles.title : undefined,
         style,
       ]}
       {...rest}
