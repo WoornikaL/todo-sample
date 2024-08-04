@@ -11,7 +11,7 @@ import { ThemedView } from '@/components/ThemedView';
 
 const HEADER_HEIGHT = 250;
 //
-// Add another comment coment
+// Add another comment coment to test
 type Props = PropsWithChildren<{
   headerImage: ReactElement;
   headerBackgroundColor: { dark: string; light: string };
