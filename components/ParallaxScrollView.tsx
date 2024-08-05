@@ -10,7 +10,7 @@ import Animated, {
 import { ThemedView } from '@/components/ThemedView';
 
 const HEADER_HEIGHT = 250;
- // Adding New comment to check changes new changes
+ // Adding New comment to check changes new changes adding comment
 type Props = PropsWithChildren<{
   headerImage: ReactElement;
   headerBackgroundColor: { dark: string; light: string };
