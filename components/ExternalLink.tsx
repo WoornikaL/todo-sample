@@ -36,7 +36,7 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(Platform.isTesting) {
             console.log("112 1")
           }
-          // Added new comment
+          // Added new comment gggg
 
 
           //changed this line
