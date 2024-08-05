@@ -18,13 +18,13 @@ export function ThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
-    // Add more custom styles as needed, 
+    // Add more custom styles as needed,  adding more.....
     <Text
       style={[
         { color },
-        type === 'default' ? styles.default : undefined,
-        type === 'subtitle' ? styles.link : undefined,
-        type === 'title' ? styles.defaultSemiBold : undefined,
+        type === 'default' ? styles.link : undefined,
+        type === 'subtitle' ? styles.defaultSemiBold : undefined,
+        type === 'title' ? styles.default : undefined,
         type === 'defaultSemiBold' ? styles.title : undefined,
 
         style,
