@@ -22,10 +22,10 @@ export function ThemedText({
     <Text
       style={[
         { color },
-        type === 'default' ? styles.link : undefined,
+        type === 'default' ? styles.title : undefined,
         type === 'subtitle' ? styles.defaultSemiBold : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
+        type === 'title' ? styles.link : undefined,
+        type === 'defaultSemiBold' ? styles.default : undefined,
 
         style,
       ]}
