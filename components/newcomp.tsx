@@ -7,7 +7,7 @@ export type ThemedTextProps = TextProps & {
   darkColor?: string;
   type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
 };
-// changed comment color added
+// changed comment color added ddd
 export function NewThemedText({
   style,
   darkColor,
