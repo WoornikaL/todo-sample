@@ -21,7 +21,7 @@ export function ExternalLink({ href, ...rest }: Props) {
           if(tyi === 11) {
             console.log("ios 1")
           }
-          // Added Code
+          // Added Code edited
           if( Platform.OS === "ios") {
             console.info("ios platform")
 
