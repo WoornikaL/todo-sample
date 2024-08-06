@@ -18,7 +18,7 @@ export function ThemedText({
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 //
   return (
-    // Add more custom styles as needed,  adding more.....
+    // Add more custom styles as needed,  adding more....., ff
     <Text
       style={[
         { color },
