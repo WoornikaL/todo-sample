@@ -23,7 +23,7 @@ export function ThemedText({
       style={[
         { color },
         type === 'default' ? styles.link : undefined,
-        type === 'subtitle' ? styles.title : undefined,
+        type === 'subtitle' ? styles.default : undefined,
         type === 'title' ? styles.default : undefined,
         type === 'defaultSemiBold' ? styles.default : undefined,
 
