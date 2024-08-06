@@ -26,7 +26,7 @@ export function ExternalLink({ href, ...rest }: Props) {
             console.info("ios platform")
 
           }
-          //Changing this line hhhhh abc
+          //Edited
           const xyz = 2
           //Removed Code heeeeee
  
