@@ -28,7 +28,7 @@ export function ExternalLink({ href, ...rest }: Props) {
           }
           //Changing this line hhhhh abc
           const xyz = 2
-          //Removed Code hiiiiiii
+          //Removed Code heeeeee
  
           if(tyi === 11) {
             console.log("ios 1")
