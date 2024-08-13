@@ -12,7 +12,7 @@ export function ExternalLink({ href, ...rest }: Props) {
       {...rest}
       href={href}
       onPress={async (event) => {
-        // Added new comment hh hhhhh
+        // Added new comment hh hhhhh jjjj
         const xyz = 1
         if (Platform.OS !== 'web') {       // Prevent the default behavior of linking to the default browser on native.
           event.preventDefault();
