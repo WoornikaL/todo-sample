@@ -1,7 +1,7 @@
 import { View, type ViewProps } from 'react-native';
 
 import { useThemeColor } from '@/hooks/useThemeColor';
-// added comment added yyyy added aaa bbbb vvvv
+// added comment added yyyy added aaa bbbb vvvv bbbb
 export type ThemedViewProps = ViewProps & {
   lightColor?: string;
   darkColor?: string;
